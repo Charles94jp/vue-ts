@@ -4,7 +4,7 @@ module.exports = {
     es2021: true
   },
   extends: [
-    'plugin:vue/essential',
+    'plugin:vue/vue3-recommended',
     'standard'
   ],
   parserOptions: {
@@ -17,5 +17,7 @@ module.exports = {
     '@typescript-eslint'
   ],
   rules: {
+    // 禁用var
+    'no-var': 'error'
   }
 }
