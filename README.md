@@ -38,11 +38,15 @@ npm i
 
 本模板的生成步骤
 
+### 初始化vite项目
+
 ```powershell
 npm create vite@latest vue-ts --template vue-ts
 # vue
 # vue-ts
 ```
+
+### 配置eslint
 
 
 ```powershell
@@ -61,9 +65,36 @@ npx eslint --init
 # JavaScript
 ```
 
-配置eslint，`plugin:vue/vue3-recommended` 以及禁用var
+配置.eslintrc.js，`plugin:vue/vue3-recommended` 以及禁用var，配置.eslintignore
 
 ~~package.json添加eslint脚本~~
 
-配置tsconfig.json，设置`'@'`路径、exclude
+### 配置@别名等项目设置
 
+```powershell
+npm install @types/node
+```
+
+配置tsconfig.json、vite.config.ts，@别名路径
+
+配置tsconfig.json，设置exclude
+
+
+
+### 配置router
+
+```powershell
+npm install vue-router@4
+```
+
+编写`@/router/index.ts`
+
+
+
+### 配置axios
+
+```powershell
+npm install axios
+```
+
+配置`@/axios`，拦截器、通用错误处理函数
