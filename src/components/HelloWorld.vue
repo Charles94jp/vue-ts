@@ -1,13 +1,14 @@
 <script setup lang="ts">
 
-// eslint-disable-next-line no-undef
-defineProps<{ msg: string }>()
+import { ref } from 'vue'
 
+// defineProps<{ msg: string }>()
+const count = ref(0)
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
-
+  <!--  <h1>{{ msg }}</h1>-->
+  <h1>Hello Vue 3 + TypeScript + Vite<br>eslint + router + axios + element-plus</h1>
   <p>
     Recommended IDE setup:
     <a href="https://code.visualstudio.com/" target="_blank">VS Code</a>

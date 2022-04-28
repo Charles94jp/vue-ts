@@ -19,8 +19,12 @@ npm i
 ## 特性
 
 1. eslint
+
 2. router
+
 3. axios
+
+4. element-plus按需导入
 
 
 
@@ -46,6 +50,8 @@ npm create vite@latest vue-ts --template vue-ts
 # vue-ts
 ```
 
+
+
 ### 配置eslint
 
 
@@ -69,10 +75,12 @@ npx eslint --init
 
 ~~package.json添加eslint脚本~~
 
+
+
 ### 配置@别名等项目设置
 
 ```powershell
-npm install @types/node
+npm install -D @types/node
 ```
 
 配置tsconfig.json、vite.config.ts，@别名路径
@@ -98,3 +106,14 @@ npm install axios
 ```
 
 配置`@/axios`，拦截器、通用错误处理函数
+
+
+
+### 按需导入Element-plus
+
+```powershell
+npm install element-plus --save
+npm install -D unplugin-vue-components unplugin-auto-import
+```
+
+配置`vite.config.ts`和`.gitignore`
